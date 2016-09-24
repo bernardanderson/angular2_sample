@@ -12,11 +12,19 @@ export class AppComponent {
 
     // More formal method, ES6/Typescript
     name: string;
-    artists: string[];
+    artists: Object[];
 
     // Initializer the variable for us. 
     constructor() {
         this.name = 'Bob';
-        this.artists = ['Joe bob', 'Jim James', 'Lance Flutter'];
+        this.artists = [
+          {
+            name: 'Joe bob',
+            school: 'Penn State'
+          }, {
+            name: 'Lance Flutter',
+            school: 'University of Illinois'
+          }
+        ];
     }
 }
