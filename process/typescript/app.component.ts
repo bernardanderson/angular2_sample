@@ -9,5 +9,5 @@ import {Component} from 'angular2/core';
 
 // Controller for the module
 export class AppComponent {
-
+    name = 'Ray';
 }
