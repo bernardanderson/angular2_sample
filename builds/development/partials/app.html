@@ -1,7 +1,9 @@
 <div class="artistsearch">
   <div class="cardsearch">
     <h1>Artist Directory</h1>
-    <span *ngIf="name">name: {{name}}</span>
+    <label *ngIf="name">name: {{name}}</label>
+    <input #newArtist>
+      <button (click)="addArtist(newArtist.value)">Add</button>
   </div> 
 </div>
 
