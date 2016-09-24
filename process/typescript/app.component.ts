@@ -13,4 +13,8 @@ export class AppComponent {
     // Typescript for setting sample variables 
     name: string = 'Bob';
     artists: string[] = ['Joe bob','Lance Flutter', 'Hal James'];
+
+    onClick() {
+      this.name = 'Bob';
+    }
 }
