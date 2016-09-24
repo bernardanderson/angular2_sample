@@ -4,13 +4,7 @@ import {Component} from 'angular2/core';
 //  (Typescript addition, ES7 feature)
 @Component({
     selector: 'my-app', 
-    template: `
-    <div class="artistsearch">
-      <div class="cardsearch">
-        <h1>Artist Directory</h1>
-        <span>name</span>
-      </div>
-    </div>`
+    templateUrl: 'partials/app.html'
 })
 
 // Controller for the module
