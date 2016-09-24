@@ -10,21 +10,7 @@ import {Component} from 'angular2/core';
 // Controller for the module
 export class AppComponent {
 
-    // More formal method, ES6/Typescript
-    name: string;
-    artists: Object[];
-
-    // Initializer the variable for us. 
-    constructor() {
-        this.name = 'Bob';
-        this.artists = [
-          {
-            name: 'Joe bob',
-            school: 'Penn State'
-          }, {
-            name: 'Lance Flutter',
-            school: 'University of Illinois'
-          }
-        ];
-    }
+    // Typescript for setting sample variables 
+    name: string = 'Bob';
+    artists: string[] = ['Joe bob','Lance Flutter', 'Hal James'];
 }
