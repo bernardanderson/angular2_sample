@@ -14,8 +14,8 @@ export class AppComponent {
     name: string = 'Bob';
     artists: string[] = ['Joe bob','Lance Flutter', 'Hal James'];
 
-    onClick(sentEvent) {
-      this.name = sentEvent.target.innerHTML;
-      console.log(sentEvent.target.innerHTML);
+    onClick(myName) {
+      this.name = myName;
+      console.log(myName);
     }
 }
