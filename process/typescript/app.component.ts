@@ -9,5 +9,12 @@ import {Component} from 'angular2/core';
 
 // Controller for the module
 export class AppComponent {
-    name = 'Ray';
+
+    // More formal method, ES6/Typescript
+    name: string;
+
+    // Initializer the variable for us. 
+    constructor() {
+        this.name = 'Bob';
+    }
 }
