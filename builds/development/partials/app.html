@@ -2,7 +2,10 @@
   <div class="cardsearch">
     <h1>Artist Directory</h1>
     <label *ngIf="name">name: {{name}}</label>
-    <input #newArtist>
+    <input #newArtist
+      (keyup.enter)="addArtist(newArtist.value); newArtist.value=''"
+      (blur)="addArtist(newArtist.value)"
+    >
       <button (click)="addArtist(newArtist.value)">Add</button>
   </div> 
 </div>
