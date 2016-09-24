@@ -18,4 +18,8 @@ export class AppComponent {
       this.name = myName;
       console.log(myName);
     }
+
+    addArtist(myArtist) {
+      this.artists.push(myArtist);
+    }
 }
