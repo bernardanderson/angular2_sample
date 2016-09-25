@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {ArtistItemComponent} from './artist-item.component';
 
 // TS/ES6 Interface for adding typing to JS variables 
 interface Artist {
@@ -13,6 +14,7 @@ interface Artist {
 @Component({
     selector: 'my-app', 
     templateUrl: 'partials/app.html',
+    directives: [ArtistItemComponent],
     styleUrls: ['css/app.css']
 })
 
