@@ -11,7 +11,7 @@ import {Component} from 'angular2/core';
 export class AppComponent {
 
     // Typescript for setting sample variables 
-    name: string = 'Bob';
+    name: string = 'Mary';
     artists: string[] = ['Joe bob','Lance Flutter', 'Hal James'];
 
     onClick(myName) {

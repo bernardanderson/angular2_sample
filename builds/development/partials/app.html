@@ -1,7 +1,7 @@
 <div class="artistsearch">
   <div class="cardsearch">
     <h1>Artist Directory</h1>
-    <label *ngIf="name">name: {{name}}</label>
+    <label *ngIf="name" [innerHTML]="'name: ' + name"></label>
     <input #newArtist
       (keyup.enter)="addArtist(newArtist.value); newArtist.value=''"
       (blur)="addArtist(newArtist.value)"
