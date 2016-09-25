@@ -14,9 +14,11 @@ export class AppComponent {
     name: string = 'Mary';
     artists: string[] = ['Joe bob','Lance Flutter', 'Hal James'];
 
-    onClick(myName) {
+    onClick(myName, myElement) {
       this.name = myName;
+      myElement.style.backgroundColor="#FECE4E";
       console.log(myName);
+      console.log(myElement); 
     }
 
     addArtist(myArtist) {
