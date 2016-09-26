@@ -2,6 +2,7 @@ import {Component} from 'angular2/core';
 import {Artist} from './artist';
 import {ArtistItemComponent} from './artist-item.component';
 import {ArtistDetailsComponent} from './artist-details.component';
+import {SearchPipe} from './search-pipe.ts';
 
 // The Artist interface that was once here has been added to it's own file (artist.ts) and
 //  is imported on line 2 above.  
@@ -12,6 +13,7 @@ import {ArtistDetailsComponent} from './artist-details.component';
     selector: 'my-app', 
     templateUrl: 'partials/app.html',
     directives: [ArtistItemComponent, ArtistDetailsComponent],
+    pipes: [SearchPipe],
     styleUrls: ['css/app.css']
 })
 

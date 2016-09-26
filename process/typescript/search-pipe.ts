@@ -4,7 +4,7 @@ import {Pipe} from 'angular2/core';
     name: 'find'
 })
 
-export class searchPipe {
+export class SearchPipe {
   transform(pipeData, [pipeModifier]){
     return pipeData.filter((eachItem) => {
       return eachItem['name'].toLowerCase().includes(pipeModifier.toLowerCase()) || 
