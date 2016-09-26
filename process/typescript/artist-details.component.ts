@@ -10,7 +10,6 @@ import {Artist} from './artist';
     selector: 'artist-details', 
     templateUrl: 'partials/artistdetails.html',
     inputs: ['artist'],
-    styleUrls: ['css/app-details.css']
 })
 
 export class ArtistDetailsComponent {}
