@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 import {Artist} from './artist';
 import {ArtistItemComponent} from './artist-item.component';
 import {ArtistDetailsComponent} from './artist-details.component';
-import {SearchPipe} from './search-pipe.ts';
+import {SearchPipe} from './search-pipe';
 
 // The Artist interface that was once here has been added to it's own file (artist.ts) and
 //  is imported on line 2 above.  
