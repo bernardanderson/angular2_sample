@@ -1,14 +1,10 @@
 import {Component} from 'angular2/core';
+import {Artist} from './artist';
 import {ArtistItemComponent} from './artist-item.component';
 import {ArtistDetailsComponent} from './artist-details.component';
 
-// TS/ES6 Interface for adding typing to JS variables 
-interface Artist {
-  name: string,
-  shortname: string,
-  reknown: string,
-  bio: string
-}
+// The Artist interface that was once here has been added to it's own file (artist.ts) and
+//  is imported on line 2 above.  
 
 // Decorator contains information about the controller
 //  (Typescript addition, ES7 feature)
