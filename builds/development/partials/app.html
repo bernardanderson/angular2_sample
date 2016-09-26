@@ -6,9 +6,11 @@
   </div> 
 </div>
 
-<ul class="artistlist cf">
-  <li class="artist cf" #artistContainer (click)="onClick(item, artistContainer)" *ngFor="#item of artists">
+<ul *ngIf="query" class="artistlist cf">
+  <li (click)="showArtist(item); query='';" class="artist cf" *ngFor="#item of artists">
     <!--Subcomponent that will be uses a custom attribute [artist] (which is received by the sub-component artist-item.component.ts) to pass into it an "item"-->
     <artist-item class="content" [artist]=item></artist-item>
   </li>
 </ul>
+<!--Injecting the variable artist and calling it currentArtist -->
+<artist-details *ngIf="currentArtist" [artist]="currentArtist"></artist-details>
